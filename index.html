@@ -9,25 +9,252 @@
   </head>
   <body>
     <main>
-      <header class="header-text">Morse Code Translator</header>
-      <div class="options">
-        <label for="options__language">Please select an option:</label>
-        <select id="options__language">
-          <option value="">language...</option>
-          <option value="english">English to Morse Code</option>
-          <option value="morse code">Morse Code to English</option>
-        </select>
-      </div>
-      <div class="container">
-        <input type="text" placeholder="language...." />
-        <div class="container__output-box"></div>
-      </div>
-      <button>Translate</button>
+      <section class="translator">
+        <div class="translator__container">
+          <h1 class="title">Morse Code Translator</h1>
+          <div class="options">
+            <h3 class="options__heading">Select Language:</h3>
+            <input type="radio" name="language" id="eng" value="english" />
+            <label for="eng"
+              >English<span class="arrow">&#8680;</span>Morse code</label
+            >
+            <input type="radio" name="language" id="code" value="morse" />
+            <label for="code"
+              >Morse code<span class="arrow">&#8680;</span>English</label
+            >
+          </div>
+          <textarea
+            id="input-box"
+            class="text-box"
+            type="text"
+            placeholder="Enter text here...."
+          ></textarea>
+          <div id="output-box" class="text-box"></div>
+          <button id="btn">Translate</button>
+        </div>
+      </section>
+      <section class="info shapedividers_com-1382">
+        <div class="info__container">
+          <h2>Morse Code Index</h2>
+          <p class="info__container__extra">
+            Between each letter and word seperator, i.e. <span class="highlight">/</span> , insert a <span class="highlight">blankspace</span><br />[Seperate
+            words with: <span class="highlight">/</span> (a forward slash)]
+          </p>
+          <div class="alphabet">
+            <div class="alphabet__letter">
+              <p>A</p>
+              <div>
+                <span class="dot"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+            <div class="alphabet__letter">
+              <p>B</p>
+              <div>
+                <span class="bar"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+            <div class="alphabet__letter">
+              <p>C</p>
+              <div>
+                <span class="bar"></span>
+                <span class="dot"></span>
+                <span class="bar"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+            <div class="alphabet__letter">
+              <p>D</p>
+              <div>
+                <span class="bar"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+            <div class="alphabet__letter">
+              <p>E</p>
+              <div>
+                <span class="dot"></span>
+              </div>
+            </div>
+            <div class="alphabet__letter">
+              <p>F</p>
+              <div>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="bar"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+            <div class="alphabet__letter">
+              <p>G</p>
+              <div>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+            <div class="alphabet__letter">
+              <p>H</p>
+              <div>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+            <div class="alphabet__letter">
+              <p>I</p>
+              <div>
+                <span class="dot"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+            <div class="alphabet__letter">
+              <p>J</p>
+              <div>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+            <div class="alphabet__letter">
+              <p>K</p>
+              <div>
+                <span class="bar"></span>
+                <span class="dot"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+            <div class="alphabet__letter">
+              <p>L</p>
+              <div>
+                <span class="dot"></span>
+                <span class="bar"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+            <div class="alphabet__letter">
+              <p>M</p>
+              <div>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+            <div class="alphabet__letter">
+              <p>N</p>
+              <div>
+                <span class="bar"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+            <div class="alphabet__letter">
+              <p>O</p>
+              <div>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+            <div class="alphabet__letter">
+              <p>P</p>
+              <div>
+                <span class="dot"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+            <div class="alphabet__letter">
+              <p>Q</p>
+              <div>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="dot"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+            <div class="alphabet__letter">
+              <p>R</p>
+              <div>
+                <span class="dot"></span>
+                <span class="bar"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+            <div class="alphabet__letter">
+              <p>S</p>
+              <div>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+            <div class="alphabet__letter">
+              <p>T</p>
+              <div>
+                <span class="bar"></span>
+              </div>
+            </div>
+            <div class="alphabet__letter">
+              <p>U</p>
+              <div>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+            <div class="alphabet__letter">
+              <p>V</p>
+              <div>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+            <div class="alphabet__letter">
+              <p>W</p>
+              <div>
+                <span class="bar"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+            <div class="alphabet__letter">
+              <p>X</p>
+              <div>
+                <span class="bar"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+            <div class="alphabet__letter">
+              <p>Y</p>
+              <div>
+                <span class="bar"></span>
+                <span class="dot"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+            <div class="alphabet__letter">
+              <p>Z</p>
+              <div>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <div class="image-container">
-      <p><b>Morse Code Alphabet</b><br>Between each letter and word seperator ("/") insert a " " (space)<br>Seperate words with a " / " (forward slash)</p>
-      <div class="image-container__image"></div>
-    </div>
     <script src="./script.js"></script>
   </body>
 </html>
